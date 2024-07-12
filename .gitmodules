@@ -1,3 +1,12 @@
 [submodule "coreutils"]
 	path = coreutils
 	url = git@github.com:coreutils/coreutils.git
+[submodule "llvm-abom"]
+	path = llvm-abom
+	url = https://github.com/nickboucher/llvm-abom.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+[submodule "curl"]
+	path = curl
+	url = https://github.com/curl/curl.git
