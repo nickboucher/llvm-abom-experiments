@@ -11,4 +11,4 @@ docker build --no-cache -t llvm-abom-experiments .
 docker run llvm-abom-experiments
 ```
 
-These experiments were initially run on an Ubuntu 24.04 VM with 4 vCores and 16GB of RAM (Azure B4as_v2 SKU).
+These experiments were initially run on an Ubuntu 24.04 VM with 4 vCores and 32GB of RAM (Azure E4as_v5 SKU).
