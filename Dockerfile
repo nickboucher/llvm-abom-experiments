@@ -1,6 +1,5 @@
 FROM ubuntu:24.04
 WORKDIR /usr/src/app
-COPY results.sh .
 ENV abomc=/usr/src/app/clang-llvm/bin
 RUN apt update
 RUN apt install -y git time
