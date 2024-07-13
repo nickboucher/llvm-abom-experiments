@@ -1,6 +1,6 @@
 [submodule "coreutils"]
 	path = coreutils
-	url = git@github.com:coreutils/coreutils.git
+	url = https://github.com/coreutils/coreutils.git
 [submodule "llvm-abom"]
 	path = llvm-abom
 	url = https://github.com/nickboucher/llvm-abom.git
