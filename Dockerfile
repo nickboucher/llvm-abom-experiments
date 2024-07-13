@@ -45,4 +45,4 @@ RUN OPENSSL_ROOT_DIR="/usr/src/app/openssl-abom" cmake -DLLVM_ENABLE_PROJECTS="c
 RUN time -o ../llvm-abom-abom.time ninja install
 RUN rm /usr/bin/ld && mv /usr/bin/ld.bak /usr/bin/ld
 WORKDIR /usr/src/app
-CMD ["bash", "-c", "'for x in *.time; do echo \"$x:\" && cat $x && echo; done'"]
+CMD results.sh
