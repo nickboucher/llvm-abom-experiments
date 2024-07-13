@@ -1,7 +1,6 @@
 FROM ubuntu:24.04
 WORKDIR /usr/src/app
-ENV abomc=/usr/src/app/clang-llvm/bin
-COPY coreutils/ curl/ llvm-abom/ openssl/ /usr/src/app/
+COPY . .
 RUN cp -r llvm-abom llvm-abom-src && cp -r llvm-abom llvm-abom-abom-src && mv openssl openssl-src && cp -r ./openssl-src ./openssl-abom-src && mv curl curl-src && cp -r curl-src curl-abom-src && mv coreutils coreutils-src && cp -r coreutils-src coreutils-abom-src
 RUN mkdir clang-llvm openssl openssl-abom curl curl-abom coreutils coreutils-abom llvm-abom llvm-abom-abom
 RUN apt update && apt install -y time clang lld cmake ninja-build libssl-dev autoconf automake libtool autopoint bison gettext gperf texinfo wget xz-utils
@@ -10,6 +9,7 @@ WORKDIR /usr/src/app/llvm-abom/build
 RUN cmake -DLLVM_ENABLE_PROJECTS="clang;lld" -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/app/clang-llvm -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DLLVM_USE_LINKER=lld -G "Ninja" ../llvm
 RUN time -o ../../clang.time ninja install
 RUN apt remove -y clang lld libssl-dev && rm -rf /usr/src/app/llvm-abom
+ENV abomc=/usr/src/app/clang-llvm/bin
 # Build openssl
 WORKDIR /usr/src/app/openssl-src
 RUN CC=${abomc}/clang CXX=${abomc}/clang++ LD=${abomc}/ld.lld CFLAGS="-fuse-ld=lld" CPPFLAGS="-fuse-ld=lld" ./Configure --prefix=/usr/src/app/openssl --openssldir=/usr/src/app/openssl/config
