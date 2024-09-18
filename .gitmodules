@@ -10,3 +10,6 @@
 [submodule "curl"]
 	path = curl
 	url = https://github.com/curl/curl.git
+[submodule "experiment-artificial/llvm-abom"]
+	path = experiment-artificial/llvm-abom
+	url = https://github.com/nickboucher/llvm-abom.git
