@@ -1,4 +1,0 @@
-LIBS=../../libcrypto
-SOURCE[../../libcrypto]=\
-        hashtable.c
-
