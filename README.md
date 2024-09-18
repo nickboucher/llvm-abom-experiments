@@ -12,11 +12,19 @@ git clone --recurse-submodules -j8 --shallow-submodules https://github.com/nickb
 
 ## Usage
 
+This repository contains 2 experiments: `real` and `artificial`. The real experiment builds a collection of real-world applications with ABOMs to measure build performance, while the artificial experiment builds a collection of generated artifical programs designed to validate the correctness and errors rates of ABOMs.
+
+### Real Experiment
+
 To run these experiments, build the docker image and run the container. The container will output the results to the console. Experiments are run during the build process.
 
 ```bash
-docker build --no-cache -t llvm-abom-experiments .
-docker run llvm-abom-experiments
+docker build --no-cache -t llvm-abom-experiment-real experiment-real/
+docker run llvm-abom-experiment-real
 ```
 
 These experiments were initially run on an Ubuntu 24.04 VM with 4 vCores and 32GB of RAM (Azure E4as_v5 SKU).
+
+### Artificial Experiment
+
+TODO
