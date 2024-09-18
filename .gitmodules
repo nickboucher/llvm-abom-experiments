@@ -1,15 +1,15 @@
-[submodule "coreutils"]
-	path = coreutils
-	url = https://github.com/coreutils/coreutils.git
-[submodule "llvm-abom"]
-	path = llvm-abom
+[submodule "experiment-artificial/llvm-abom"]
+	path = experiment-artificial/llvm-abom
 	url = https://github.com/nickboucher/llvm-abom.git
+[submodule "experiment-real/llvm-abom"]
+	path = experiment-real/llvm-abom
+	url = https://github.com/nickboucher/llvm-abom.git
+[submodule "coreutils"]
+	path = experiment-real/coreutils
+	url = https://github.com/coreutils/coreutils.git
 [submodule "openssl"]
 	path = openssl
 	url = https://github.com/openssl/openssl.git
 [submodule "curl"]
-	path = curl
+	path = experiment-real/curl
 	url = https://github.com/curl/curl.git
-[submodule "experiment-artificial/llvm-abom"]
-	path = experiment-artificial/llvm-abom
-	url = https://github.com/nickboucher/llvm-abom.git
