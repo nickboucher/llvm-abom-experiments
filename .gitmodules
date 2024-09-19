@@ -1,3 +1,15 @@
 [submodule "experiment-artificial/llvm-abom"]
 	path = experiment-artificial/llvm-abom
 	url = https://github.com/nickboucher/llvm-abom.git
+[submodule "experiment-real/llvm-abom"]
+	path = experiment-real/llvm-abom
+	url = https://github.com/nickboucher/llvm-abom.git
+[submodule "experiment-real/coreutils"]
+	path = experiment-real/coreutils
+	url = git@github.com:coreutils/coreutils.git
+[submodule "experiment-real/curl"]
+	path = experiment-real/curl
+	url = https://github.com/curl/curl.git
+[submodule "experiment-real/openssl"]
+	path = experiment-real/openssl
+	url = https://github.com/openssl/openssl.git
