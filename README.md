@@ -27,4 +27,11 @@ These experiments were initially run on an Ubuntu 24.04 VM with 4 vCores and 32G
 
 ### Artificial Experiment
 
-TODO
+To run these experiments, build the docker image and run the container. The container will output the results to the console. Experiments are run during container runtime.
+
+```bash
+docker build --no-cache -t llvm-abom-experiment-artificial experiment-artificial/
+docker run llvm-abom-experiment-artificial
+```
+
+These experiments were initially run on an Ubuntu 24.04 VM with 4 vCores and 32GB of RAM (Azure E4as_v5 SKU).
