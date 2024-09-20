@@ -52,8 +52,7 @@ def main(directory: str, dependency_count: int, collision_attempts: int):
         f"-fuse-ld={llvm}/ld.lld "
         f"-I {directory}/include "
         f"-o {binary} "
-        f"{directory}/src/abom{dependency_count}.c "
-        f"{' '.join([f'{directory}/src/{dep}.c' for dep in deps])}",
+        f"{directory}/src/*.c ",
         shell=True)
     print('Done', flush=True)
     print('Generated ABOM details:', flush=True)
