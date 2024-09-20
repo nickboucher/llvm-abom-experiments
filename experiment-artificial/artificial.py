@@ -82,7 +82,7 @@ def main(directory: str, dependency_count: int, collision_attempts: int):
     sleep(.1) # Sleep to allow STDERR to flush
     print('Done', flush=True)
     print(f'===\nTrue Hashes Present: {true_present}\n'
-          f'True Hahes Absent: {true_absent}\n'
+          f'True Hashes Absent: {true_absent}\n'
           f'True Hashes Success Rate: {true_present / len(true_hashes):.4%}\n===', flush=True)
     # Test for false positives
     print(f'Generating {collision_attempts} random hashes to test for false positives...', flush=True)
