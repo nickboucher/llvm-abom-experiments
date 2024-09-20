@@ -16,6 +16,7 @@ RUN apt remove -y clang lld libssl-dev && \
     mkdir -p /usr/src/app/llvm-abom/build && \
     mv /usr/src/app/bin /usr/src/app/llvm-abom/build
 # Run experiment
+RUN apt install -y python3-tqdm
 COPY artificial.py artificial.py
 RUN mkdir experiment
 ENTRYPOINT [ "./artificial.py", "/usr/src/app/experiment/" ]
