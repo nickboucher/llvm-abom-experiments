@@ -14,6 +14,9 @@ git clone --depth 1 --recurse-submodules -j8 --shallow-submodules https://github
 
 This repository contains 2 experiments: `real` and `artificial`. The real experiment builds a collection of real-world applications with ABOMs to measure build performance, while the artificial experiment builds a collection of generated artifical programs designed to validate the correctness and errors rates of ABOMs.
 
+> [!TIP]
+> If your docker environment has limited memory, the build process may fail. To fix this, add `--build-arg low_memory=1` to the docker build commands.
+
 ### Real Experiment
 
 To run these experiments, build the docker image and run the container. The container will output the results to the console. Experiments are run during the build process.
