@@ -8,6 +8,7 @@ from string import ascii_lowercase
 from os import makedirs
 from os.path import join
 from tqdm import tqdm, trange
+from time import sleep
 
 llvm = '/usr/src/app/llvm-abom/build/bin'
 
@@ -79,6 +80,7 @@ def main(directory: str, dependency_count: int, collision_attempts: int):
         else:
             print(f'Error: {hash}')
             exit(1)
+    sleep(.1) # Sleep to allow STDERR to flush
     print('Done', flush=True)
     print(f'===\nTrue Hashes Present: {true_present}\n'
           f'True Hahes Absent: {true_absent}\n'
@@ -88,6 +90,7 @@ def main(directory: str, dependency_count: int, collision_attempts: int):
     false_hashes = set()
     false_present = 0
     false_absent = 0
+    sleep(.1) # Sleep to allow STDOUT to flush
     for i in trange(collision_attempts):
         while True:
             hash = random_abom_hash()
