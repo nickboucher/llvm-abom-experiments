@@ -33,18 +33,18 @@ WORKDIR /usr/src/app/coreutils-src
 RUN ./bootstrap
 RUN CC=${abomc}/clang CXX=${abomc}/clang++ LD=${abomc}/ld.lld LDFLAGS="-L/usr/src/app/openssl/lib64" CFLAGS="-fuse-ld=${abomc}/ld.lld" CPPFLAGS="-fuse-ld=${abomc}/ld.lld -I/usr/src/app/openssl/include" FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/usr/src/app/coreutils --with-openssl=yes
 RUN time -o ../coreutils.time make install
-WORKDIR /usr/src/app/coreutils-src
+WORKDIR /usr/src/app/coreutils-abom-src
 RUN ./bootstrap
 RUN CC=${abomc}/clang CXX=${abomc}/clang++ LD=${abomc}/ld.lld LDFLAGS="-L/usr/src/app/openssl-abom/lib64" CFLAGS="-fabom -fuse-ld=${abomc}/ld.lld" CPPFLAGS="-fabom -fuse-ld=${abomc}/ld.lld -I/usr/src/app/openssl-abom/include" FORCE_UNSAFE_CONFIGURE=1 ./configure --prefix=/usr/src/app/coreutils-abom --with-openssl=yes
 RUN time -o ../coreutils-abom.time make install
 # Rebuild llvm-abom
 WORKDIR /usr/src/app/llvm-abom-src/build
 RUN OPENSSL_ROOT_DIR="/usr/src/app/openssl" cmake -DLLVM_ENABLE_PROJECTS="clang;lld" -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/app/llvm-abom -DCMAKE_C_COMPILER=${abomc}/clang -DCMAKE_CXX_COMPILER=${abomc}/clang++ -DCMAKE_C_FLAGS="-I/usr/src/app/openssl/include" -DCMAKE_CXX_FLAGS="-I/usr/src/app/openssl/include" -DLLVM_USE_LINKER=${abomc}/ld.ll $LOW_MEMORY -G "Ninja" ../llvm
-RUN time -o ../llvm-abom.time ninja install
+RUN time -o ../../llvm-abom.time ninja install
 WORKDIR /usr/src/app/llvm-abom-abom-src/build
 RUN mv /usr/bin/ld /usr/bin/ld.bak && ln -s /usr/src/app/clang-llvm/bin/ld.lld /usr/bin/ld
 RUN OPENSSL_ROOT_DIR="/usr/src/app/openssl-abom" cmake -DLLVM_ENABLE_PROJECTS="clang;lld" -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/app/llvm-abom-abom -DCMAKE_C_COMPILER=${abomc}/clang -DCMAKE_CXX_COMPILER=${abomc}/clang++ -DCMAKE_C_FLAGS="-fabom -I/usr/src/app/openssl-abom/include" -DCMAKE_CXX_FLAGS="-fabom -I/usr/src/app/openssl-abom/include" -DLLVM_USE_LINKER=${abomc}/ld.lld $LOW_MEMORY -G "Ninja" ../llvm
-RUN time -o ../llvm-abom-abom.time ninja install
+RUN time -o ../../llvm-abom-abom.time ninja install
 RUN rm /usr/bin/ld && mv /usr/bin/ld.bak /usr/bin/ld
 WORKDIR /usr/src/app
 CMD ["bash", "/usr/src/app/results.sh"]
