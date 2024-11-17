@@ -1,0 +1,36 @@
+clang.time:
+29023.58user 1160.42system 2:06:43elapsed 396%CPU (0avgtext+0avgdata 1464364maxresident)k
+124472inputs+13058632outputs (2740major+240229963minor)pagefaults 0swaps
+
+coreutils-abom.time:
+26.78user 13.58system 0:40.32elapsed 100%CPU (0avgtext+0avgdata 97864maxresident)k
+0inputs+56088outputs (149major+3032849minor)pagefaults 0swaps
+
+coreutils.time:
+91.44user 14.66system 0:56.33elapsed 188%CPU (0avgtext+0avgdata 104028maxresident)k
+48632inputs+124240outputs (165major+3335464minor)pagefaults 0swaps
+
+curl-abom.time:
+40.84user 14.42system 0:55.20elapsed 100%CPU (0avgtext+0avgdata 103660maxresident)k
+23736inputs+48560outputs (113major+3579002minor)pagefaults 0swaps
+
+curl.time:
+38.66user 13.75system 0:52.31elapsed 100%CPU (0avgtext+0avgdata 101832maxresident)k
+5016inputs+47216outputs (29major+3536670minor)pagefaults 0swaps
+
+openssl-abom.time:
+445.28user 90.49system 8:53.33elapsed 100%CPU (0avgtext+0avgdata 104060maxresident)k
+109392inputs+1918912outputs (2256major+21583244minor)pagefaults 0swaps
+
+openssl.time:
+284.89user 85.31system 6:08.27elapsed 100%CPU (0avgtext+0avgdata 102204maxresident)k
+182776inputs+1907608outputs (2459major+21199894minor)pagefaults 0swaps
+
+llvm-abom-abom-src/llvm-abom-abom.time:
+27850.04user 1182.58system 2:01:49elapsed 397%CPU (0avgtext+0avgdata 1463840maxresident)k
+495408inputs+10559456outputs (4885major+233055239minor)pagefaults 0swaps
+
+llvm-abom-src/llvm-abom.time:
+27360.58user 1146.62system 1:59:37elapsed 397%CPU (0avgtext+0avgdata 1464372maxresident)k
+496216inputs+10532728outputs (4995major+237897495minor)pagefaults 0swaps
+

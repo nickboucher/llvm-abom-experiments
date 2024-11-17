@@ -1,0 +1,14 @@
+Build                                   Samples        Average Time (s)    Increase
+
+openssl.time                            10             373.95              
+openssl-abom.time                       10             539.76              165.81  (44.34%)
+
+curl.time                               10             53.57               
+curl-abom.time                          10             56.29               2.72    (5.07%)
+
+coreutils.time                          10             57.39               
+coreutils-abom.time                     10             66.78               9.39    (16.36%)
+
+llvm-abom-src/llvm-abom.time            10             7318.50             
+llvm-abom-abom-src/llvm-abom-abom.time  10             7407.30             88.80   (1.21%)
+

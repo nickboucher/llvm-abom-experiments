@@ -1,0 +1,332 @@
+Binary                                  Samples        Average Size        Increase
+
+openssl/bin/openssl                     10             1316904             
+openssl-abom/bin/openssl                10             1317992             1088    (0.08%)
+
+curl/bin/curl                           10             605248              
+curl-abom/bin/curl                      10             606096              848     (0.14%)
+
+llvm-abom/bin/clang-19                  10             194437040           
+llvm-abom-abom/bin/clang-19             10             194505176           68136   (0.04%)
+
+llvm-abom/bin/lld                       10             126447440           
+llvm-abom-abom/bin/lld                  10             126496568           49128   (0.04%)
+
+coreutils/bin/install                   10             170720              
+coreutils-abom/bin/install              10             171880              1160    (0.68%)
+
+coreutils/bin/chroot                    10             58240               
+coreutils-abom/bin/chroot               10             59080               840     (1.44%)
+
+coreutils/bin/hostid                    10             43104               
+coreutils-abom/bin/hostid               10             43904               800     (1.86%)
+
+coreutils/bin/timeout                   10             56904               
+coreutils-abom/bin/timeout              10             57768               864     (1.52%)
+
+coreutils/bin/nice                      10             47472               
+coreutils-abom/bin/nice                 10             48296               824     (1.74%)
+
+coreutils/bin/who                       10             65880               
+coreutils-abom/bin/who                  10             66776               896     (1.36%)
+
+coreutils/bin/users                     10             54288               
+coreutils-abom/bin/users                10             55120               832     (1.53%)
+
+coreutils/bin/pinky                     10             62192               
+coreutils-abom/bin/pinky                10             63072               880     (1.41%)
+
+coreutils/bin/stty                      10             86160               
+coreutils-abom/bin/stty                 10             87032               872     (1.01%)
+
+coreutils/bin/df                        10             116728              
+coreutils-abom/bin/df                   10             117672              944     (0.81%)
+
+coreutils/bin/stdbuf                    10             54360               
+coreutils-abom/bin/stdbuf               10             55208               848     (1.56%)
+
+coreutils/bin/[                         10             63672               
+coreutils-abom/bin/[                    10             64504               832     (1.31%)
+
+coreutils/bin/b2sum                     10             93584               
+coreutils-abom/bin/b2sum                10             94432               848     (0.91%)
+
+coreutils/bin/base64                    10             58328               
+coreutils-abom/bin/base64               10             59160               832     (1.43%)
+
+coreutils/bin/base32                    10             59120               
+coreutils-abom/bin/base32               10             59944               824     (1.39%)
+
+coreutils/bin/basenc                    10             76032               
+coreutils-abom/bin/basenc               10             76888               856     (1.13%)
+
+coreutils/bin/basename                  10             45232               
+coreutils-abom/bin/basename             10             46040               808     (1.79%)
+
+coreutils/bin/cat                       10             57312               
+coreutils-abom/bin/cat                  10             58192               880     (1.54%)
+
+coreutils/bin/chcon                     10             99344               
+coreutils-abom/bin/chcon                10             100248              904     (0.91%)
+
+coreutils/bin/chgrp                     10             98648               
+coreutils-abom/bin/chgrp                10             99568               920     (0.93%)
+
+coreutils/bin/chmod                     10             92904               
+coreutils-abom/bin/chmod                10             93784               880     (0.95%)
+
+coreutils/bin/chown                     10             98648               
+coreutils-abom/bin/chown                10             99568               920     (0.93%)
+
+coreutils/bin/cksum                     10             187048              
+coreutils-abom/bin/cksum                10             188200              1152    (0.62%)
+
+coreutils/bin/comm                      10             57712               
+coreutils-abom/bin/comm                 10             58568               856     (1.48%)
+
+coreutils/bin/cp                        10             160160              
+coreutils-abom/bin/cp                   10             161264              1104    (0.69%)
+
+coreutils/bin/csplit                    10             71680               
+coreutils-abom/bin/csplit               10             72528               848     (1.18%)
+
+coreutils/bin/cut                       10             60520               
+coreutils-abom/bin/cut                  10             61376               856     (1.41%)
+
+coreutils/bin/date                      10             132936              
+coreutils-abom/bin/date                 10             133784              848     (0.64%)
+
+coreutils/bin/dd                        10             94040               
+coreutils-abom/bin/dd                   10             94904               864     (0.92%)
+
+coreutils/bin/dir                       10             203840              
+coreutils-abom/bin/dir                  10             204872              1032    (0.51%)
+
+coreutils/bin/dircolors                 10             62152               
+coreutils-abom/bin/dircolors            10             62968               816     (1.31%)
+
+coreutils/bin/dirname                   10             44000               
+coreutils-abom/bin/dirname              10             44792               792     (1.80%)
+
+coreutils/bin/du                        10             151576              
+coreutils-abom/bin/du                   10             152560              984     (0.65%)
+
+coreutils/bin/echo                      10             44976               
+coreutils-abom/bin/echo                 10             45776               800     (1.78%)
+
+coreutils/bin/env                       10             61304               
+coreutils-abom/bin/env                  10             62120               816     (1.33%)
+
+coreutils/bin/expand                    10             52352               
+coreutils-abom/bin/expand               10             53184               832     (1.59%)
+
+coreutils/bin/expr                      10             133424              
+coreutils-abom/bin/expr                 10             134256              832     (0.62%)
+
+coreutils/bin/factor                    10             157968              
+coreutils-abom/bin/factor               10             158808              840     (0.53%)
+
+coreutils/bin/false                     10             41608               
+coreutils-abom/bin/false                10             42408               800     (1.92%)
+
+coreutils/bin/fmt                       10             58704               
+coreutils-abom/bin/fmt                  10             59528               824     (1.40%)
+
+coreutils/bin/fold                      10             51272               
+coreutils-abom/bin/fold                 10             52096               824     (1.61%)
+
+coreutils/bin/groups                    10             47608               
+coreutils-abom/bin/groups               10             48448               840     (1.76%)
+
+coreutils/bin/head                      10             61248               
+coreutils-abom/bin/head                 10             62112               864     (1.41%)
+
+coreutils/bin/id                        10             61760               
+coreutils-abom/bin/id                   10             62608               848     (1.37%)
+
+coreutils/bin/join                      10             73664               
+coreutils-abom/bin/join                 10             74544               880     (1.19%)
+
+coreutils/bin/kill                      10             50400               
+coreutils-abom/bin/kill                 10             51208               808     (1.60%)
+
+coreutils/bin/link                      10             43496               
+coreutils-abom/bin/link                 10             44312               816     (1.88%)
+
+coreutils/bin/ln                        10             96064               
+coreutils-abom/bin/ln                   10             97024               960     (1.00%)
+
+coreutils/bin/logname                   10             43224               
+coreutils-abom/bin/logname              10             44032               808     (1.87%)
+
+coreutils/bin/ls                        10             203840              
+coreutils-abom/bin/ls                   10             204872              1032    (0.51%)
+
+coreutils/bin/md5sum                    10             61624               
+coreutils-abom/bin/md5sum               10             62488               864     (1.40%)
+
+coreutils/bin/mkdir                     10             64288               
+coreutils-abom/bin/mkdir                10             65168               880     (1.37%)
+
+coreutils/bin/mkfifo                    10             51536               
+coreutils-abom/bin/mkfifo               10             52376               840     (1.63%)
+
+coreutils/bin/mknod                     10             56808               
+coreutils-abom/bin/mknod                10             57648               840     (1.48%)
+
+coreutils/bin/mktemp                    10             51552               
+coreutils-abom/bin/mktemp               10             52360               808     (1.57%)
+
+coreutils/bin/mv                        10             177240              
+coreutils-abom/bin/mv                   10             178384              1144    (0.65%)
+
+coreutils/bin/nl                        10             58880               
+coreutils-abom/bin/nl                   10             59704               824     (1.40%)
+
+coreutils/bin/nproc                     10             48048               
+coreutils-abom/bin/nproc                10             48880               832     (1.73%)
+
+coreutils/bin/nohup                     10             49792               
+coreutils-abom/bin/nohup                10             50608               816     (1.64%)
+
+coreutils/bin/numfmt                    10             83192               
+coreutils-abom/bin/numfmt               10             84048               856     (1.03%)
+
+coreutils/bin/od                        10             85944               
+coreutils-abom/bin/od                   10             86808               864     (1.01%)
+
+coreutils/bin/paste                     10             50032               
+coreutils-abom/bin/paste                10             50856               824     (1.65%)
+
+coreutils/bin/pathchk                   10             46600               
+coreutils-abom/bin/pathchk              10             47416               816     (1.75%)
+
+coreutils/bin/pr                        10             104552              
+coreutils-abom/bin/pr                   10             105432              880     (0.84%)
+
+coreutils/bin/printenv                  10             43264               
+coreutils-abom/bin/printenv             10             44064               800     (1.85%)
+
+coreutils/bin/printf                    10             56976               
+coreutils-abom/bin/printf               10             57808               832     (1.46%)
+
+coreutils/bin/ptx                       10             75968               
+coreutils-abom/bin/ptx                  10             76800               832     (1.10%)
+
+coreutils/bin/pwd                       10             48352               
+coreutils-abom/bin/pwd                  10             49176               824     (1.70%)
+
+coreutils/bin/readlink                  10             65296               
+coreutils-abom/bin/readlink             10             66128               832     (1.27%)
+
+coreutils/bin/realpath                  10             67368               
+coreutils-abom/bin/realpath             10             68208               840     (1.25%)
+
+coreutils/bin/rm                        10             99088               
+coreutils-abom/bin/rm                   10             100008              920     (0.93%)
+
+coreutils/bin/rmdir                     10             47696               
+coreutils-abom/bin/rmdir                10             48504               808     (1.69%)
+
+coreutils/bin/runcon                    10             48168               
+coreutils-abom/bin/runcon               10             48992               824     (1.71%)
+
+coreutils/bin/seq                       10             55632               
+coreutils-abom/bin/seq                  10             56448               816     (1.47%)
+
+coreutils/bin/sha1sum                   10             61656               
+coreutils-abom/bin/sha1sum              10             62512               856     (1.39%)
+
+coreutils/bin/sha224sum                 10             62888               
+coreutils-abom/bin/sha224sum            10             63736               848     (1.35%)
+
+coreutils/bin/sha256sum                 10             62904               
+coreutils-abom/bin/sha256sum            10             63752               848     (1.35%)
+
+coreutils/bin/sha384sum                 10             63000               
+coreutils-abom/bin/sha384sum            10             63856               856     (1.36%)
+
+coreutils/bin/sha512sum                 10             63032               
+coreutils-abom/bin/sha512sum            10             63888               856     (1.36%)
+
+coreutils/bin/shred                     10             84872               
+coreutils-abom/bin/shred                10             85792               920     (1.08%)
+
+coreutils/bin/shuf                      10             85536               
+coreutils-abom/bin/shuf                 10             86416               880     (1.03%)
+
+coreutils/bin/sleep                     10             47128               
+coreutils-abom/bin/sleep                10             47968               840     (1.78%)
+
+coreutils/bin/sort                      10             170072              
+coreutils-abom/bin/sort                 10             171104              1032    (0.61%)
+
+coreutils/bin/split                     10             88056               
+coreutils-abom/bin/split                10             88976               920     (1.04%)
+
+coreutils/bin/stat                      10             115976              
+coreutils-abom/bin/stat                 10             116896              920     (0.79%)
+
+coreutils/bin/sum                       10             69704               
+coreutils-abom/bin/sum                  10             70544               840     (1.21%)
+
+coreutils/bin/sync                      10             46176               
+coreutils-abom/bin/sync                 10             46968               792     (1.72%)
+
+coreutils/bin/tac                       10             56528               
+coreutils-abom/bin/tac                  10             57384               856     (1.51%)
+
+coreutils/bin/tail                      10             110552              
+coreutils-abom/bin/tail                 10             111504              952     (0.86%)
+
+coreutils/bin/tee                       10             57112               
+coreutils-abom/bin/tee                  10             57960               848     (1.48%)
+
+coreutils/bin/test                      10             59664               
+coreutils-abom/bin/test                 10             60488               824     (1.38%)
+
+coreutils/bin/touch                     10             111856              
+coreutils-abom/bin/touch                10             112704              848     (0.76%)
+
+coreutils/bin/tr                        10             69152               
+coreutils-abom/bin/tr                   10             70000               848     (1.23%)
+
+coreutils/bin/true                      10             41608               
+coreutils-abom/bin/true                 10             42400               792     (1.90%)
+
+coreutils/bin/truncate                  10             51976               
+coreutils-abom/bin/truncate             10             52792               816     (1.57%)
+
+coreutils/bin/tsort                     10             51024               
+coreutils-abom/bin/tsort                10             51864               840     (1.65%)
+
+coreutils/bin/tty                       10             42864               
+coreutils-abom/bin/tty                  10             43680               816     (1.90%)
+
+coreutils/bin/uname                     10             45672               
+coreutils-abom/bin/uname                10             46480               808     (1.77%)
+
+coreutils/bin/unexpand                  10             53104               
+coreutils-abom/bin/unexpand             10             53920               816     (1.54%)
+
+coreutils/bin/uniq                      10             62496               
+coreutils-abom/bin/uniq                 10             63352               856     (1.37%)
+
+coreutils/bin/unlink                    10             43296               
+coreutils-abom/bin/unlink               10             44088               792     (1.83%)
+
+coreutils/bin/uptime                    10             73384               
+coreutils-abom/bin/uptime               10             74248               864     (1.18%)
+
+coreutils/bin/vdir                      10             203840              
+coreutils-abom/bin/vdir                 10             204872              1032    (0.51%)
+
+coreutils/bin/wc                        10             79672               
+coreutils-abom/bin/wc                   10             80776               1104    (1.39%)
+
+coreutils/bin/whoami                    10             43480               
+coreutils-abom/bin/whoami               10             44288               808     (1.86%)
+
+coreutils/bin/yes                       10             44296               
+coreutils-abom/bin/yes                  10             45112               816     (1.84%)
+

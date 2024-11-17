@@ -1,0 +1,30 @@
+Generating C solution in /usr/src/app/experiment/ with 1000 dependencies... Done
+Compiling generated C solution with ABOM... Done
+Generated ABOM details:
+
+ABOM version: 1
+ABOM num filters: 2
+ABOM model: 32677887
+ABOM blob size: 4227
+
+File: /usr/src/app/experiment//bin/abom1000
+Format: elf64-x86-64
+Arch: x86_64
+AddressSize: 64bit
+LoadName: <Not found>
+
+Checking ABOM for true set of hashes...
+Done
+===
+True Hashes Present: 2000
+True Hashes Absent: 0
+True Hashes Success Rate: 100.0000%
+===
+Generating 100000 random hashes to test for false positives...
+Done
+===
+False Hashes Present: 7
+False Hashes Absent: 99993
+False Positive Rate: 0.0070%
+===
+Experiment Complete.
